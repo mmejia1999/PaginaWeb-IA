@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<!--En head se almacenan metadatos para poder renderizar mi pagina web-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scaled">
@@ -8,59 +8,59 @@
 </head>
 
 <body>
-
+<!--Header es una etiqueta semantica que indica que es una cabecera-->
     <header>
-        <h1>Mitología Griega</h1>
-        <img src="https://www.pinturayartistas.com/wordpress/wp-content/uploads/2012/mitologia/9musas/Apolo-y-sus-musas.jpg" alt="Imagen de las nueve musas de la mitología griega">
-    
+        <div style="text-align: center;">
+        <h1 style="color: lightcoral;">Mitología Griega</h1>
+        <img src="https://www.pinturayartistas.com/wordpress/wp-content/uploads/2012/mitologia/9musas/Apolo-y-sus-musas.jpg" alt="Imagen de las nueve musas de la mitología griega"
+        width="800" height="400">
+        <!--Barra de navegación-->
         <nav>
             <ul>
+                <!--Enlaces internos-->
                 <li><a href="#Origen">Origen de la Mitologia Griega</a></li>
-                <li><a href="#Héroes y Dioses">Héroes y Dioses</a></li>
+                <li><a href="#Dioses y Héroes">Dioses y Héroes</a></li>
                 <li><a href="#Mitos y Leyendas">Mitos y Leyendas</a></li>
                 <li><a href="#Criaturas Mitológicas">Criaturas Mitológicas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-
+     </div>
     </header>
 
 
     <main>
 
         <section id="Origen">
-            <p>La mitología griega es un conjunto de relatos tradicionales que los antiguos 
-            griegos utilizaban para explicar el origen del mundo, la naturaleza y los 
-            fenómenos humanos. Estos mitos incluyen historias sobre dioses, héroes, criaturas <br>
-            fantásticas y eventos cósmicos, y no solo eran relatos populares, sino también una
-            forma de entender el universo. Los dioses griegos, que habitaban el monte Olimpo,
-            eran seres inmortales y poderosos que regían distintos aspectos de la vida, como <br>
-             el amor, la guerra, la sabiduría, y la muerte. Entre ellos destacaron Zeus, 
-            el rey de los dioses, Atenea, la diosa de la sabiduría, y Apolo, el dios de la música 
-            y las artes. Pero los mitos no solo hablaban de las divinidades, sino también <br>
-            de los mortales que se cruzaron en sus caminos: héroes como Hércules, Aquiles 
-            y Perseo, cuyas hazañas y tragedias fueron narradas en épicas como la Ilíada 
-            y la Odisea de Homero. Estos relatos no solo intentaban explicar el mundo <br>
-            natural, sino también transmitir lecciones morales, mitificando la lucha 
-            entre el bien y el mal, la justicia y la venganza, la fatalidad y el libre albedrío.</p>
+            <p style="font-size: 20px; color:brown">La <b>mitología griega</b> es un conjunto de relatos tradicionales que los antiguos griegos utilizaban para explicar el origen del mundo, <br>
+            la naturaleza y los fenómenos humanos. Estos mitos incluyen historias sobre dioses, héroes, criaturas fantásticas y eventos cósmicos, <br>
+            y no solo eran relatos populares, sino también una forma de <strong>entender el universo</strong>. Los dioses griegos, que habitaban el monte Olimpo, <br>
+            eran seres inmortales y poderosos que regían distintos aspectos de la vida, como el amor, la guerra, la sabiduría, y la muerte. Entre <br>
+            ellos destacaron Zeus, el rey de los dioses, Atenea, la diosa de la sabiduría, y Apolo, el dios de la música y las artes. Pero los <br>
+            mitos no solo hablaban de las divinidades, sino también de los mortales que se cruzaron en sus caminos: héroes como Hércules, Aquiles <br>
+            y Perseo, cuyas hazañas y tragedias fueron narradas en épicas como la Ilíada y la Odisea de Homero. Estos relatos no solo intentaban <br>
+            explicar el mundo natural, sino también transmitir <span style="color:olive;">lecciones morales</span>, mitificando la lucha entre el bien y el mal, la justicia y la <br>
+            venganza, la fatalidad y el libre albedrío.</p>
          </section>
 
-        <section id="Héroes y Dioses">
-             <h2>Héroes y Dioses</h2>
+         <!-- <b> y <strong> ponen en negritas, pero una es semantica y la otra no-->
+
+        <section id="Dioses y Héroes">
+             <h2>Dioses y Héroes</h2>
 
         
                 <ul>
-                     <li>El Olimpo</li>
-                     <li>Dioses menores</li>
-                     <li>Titánes y Gigantes</li>
-                     <li>Héroes mitológicos</li>
-                     <li>Mujeres heroínas</li>
+                     <li><i>El Olimpo</i></li> <!-- <i> y <em> ponen en cursiva o italica-->
+                     <li><i>Dioses menores</i></li>
+                     <li><i>Titánes y Gigantes</i></li>
+                     <li><i>Héroes mitológicos</i></li>
+                     <li><i>Mujeres heroínas</i></li>
                 </ul>
         </section>
 
         <section id="Mitos y Leyendas">
             <h2>Mitos y Leyendas</h2>
-            <p>La mitología griega está repleta de historias fascinantes que van desde guerras épicas
+            <p>La mitología griega está repleta de <em>historias fascinantes</em> que van desde guerras épicas
              hasta transformaciones sobrenaturales, donde dioses, héroes y monstruos se enfrentan en <br>
              un mundo de intrigas y maravillas. En ellas podemos encontrar:  </p>
                 <ul>
@@ -88,7 +88,8 @@
         </section>
 
         <section id="contacto">
-            <h2>Contáctanos</h2>
+            <!-- Subrayamos con <u> -->
+            <h2><u>Contáctanos</u></h2>
             <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required><br><br>
